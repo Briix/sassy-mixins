@@ -22,7 +22,7 @@ section {
 #one-tone-text-shadow {
   background: #DAA70B; }
   #one-tone-text-shadow h1 {
-    text-shadow: 0px 1px #8E432B, 1px 0px #8E432B, 0px 1px #8E432B, 1px 0px #8E432B, 1px 2px #8E432B, 2px 1px #8E432B, 2px 3px #8E432B, 3px 2px #8E432B, 3px 4px #8E432B, 4px 3px #8E432B, 4px 5px #8E432B, 5px 4px #8E432B, 5px 6px #8E432B, 6px 5px #8E432B;
+    text-shadow: 0px 1px #8E432B, -1px 0px #8E432B, -0px 1px #8E432B, -1px 0px #8E432B, -1px 2px #8E432B, -2px 1px #8E432B, -2px 3px #8E432B, -3px 2px #8E432B, -3px 4px #8E432B, -4px 3px #8E432B, -4px 5px #8E432B, -5px 4px #8E432B, -5px 6px #8E432B, -6px 5px #8E432B;
     font-size: 12em;
     text-align: center;
     color: #B43219;
