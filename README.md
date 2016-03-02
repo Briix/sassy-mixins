@@ -5,7 +5,7 @@ For examples of the different mixins, check the `example` folder.
 
 ## Mixins
 
-### text-close-shade( `depth`, `color` )
+### text-close-shade( `depth`, `color`, `printer-shade` )
 
 `text-close-shade` creates closed shades on text. The idea came from [Tim Brown's excellent article on TypeKit's blog](http://blog.typekit.com/2011/07/19/shading-with-css-text-shadows/).
 
