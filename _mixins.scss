@@ -1,9 +1,10 @@
-@mixin text-close-shade($depth, $colors) {
+@mixin text-close-shade($depth, $colors, $printer-shade: false) {
     $colorOne: nth($colors, 1);
     $colorTwo: if(length($colors) > 1, nth($colors, 2), nth($colors, 1));
-    $shadow: 0px 1px $colorOne, 1px 0px $colorTwo + ", ";
+    $prefix: if($printer-shade, "", "-");
+    $shadow: (0px 1px $colorOne, #{$prefix}1px 0px $colorTwo) + ", ";
     @for $i from 1 through $depth {
-        $shadow: $shadow + (($i)-1px #{$i}px $colorOne, #{$i}px ($i)-1px $colorTwo) + if($i == $depth, "", ", ");
+        $shadow: $shadow + (#{$prefix}($i)-1px #{$i}px $colorOne, #{$prefix}#{$i}px ($i)-1px $colorTwo) + if($i == $depth, "", ", ");
     }
     text-shadow: $shadow;
 }
