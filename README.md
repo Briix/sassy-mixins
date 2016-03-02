@@ -7,13 +7,13 @@ For examples of the different mixins, check the `example` folder.
 
 ### text-close-shade( `depth`, `color` )
 
-`text-close-shade` creates closed shades on text. Currently only applies a printer's shade that's to the right and bottom of the letters.
-The idea came from [Tim Brown's excellent article on TypeKit's blog](http://blog.typekit.com/2011/07/19/shading-with-css-text-shadows/) and is still missing a few features, such as direction and blur.
+`text-close-shade` creates closed shades on text. The idea came from [Tim Brown's excellent article on TypeKit's blog](http://blog.typekit.com/2011/07/19/shading-with-css-text-shadows/).
 
-| Parameters | Accepted Data Types | Required? |
-|------------|---------------------|-----------|
-| depth      | `int`               | Yes       |
-| color      | `string`, `list`    | Yes       |
+| Parameters     | Accepted Data Types | Required? |
+|----------------|---------------------|-----------|
+| depth          | `int`               | Yes       |
+| color          | `string`, `list`    | Yes       |
+| printer-shade  | `boolean`           | No        |
 
 ## Instructions
 
