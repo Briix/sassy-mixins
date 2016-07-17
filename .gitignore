@@ -1,2 +1,5 @@
 # SASS cache
 .sass-cache
+
+# Vim swp files
+*.swp
