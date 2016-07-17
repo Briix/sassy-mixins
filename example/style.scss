@@ -1,38 +1,28 @@
 @import '../mixins';
 
-*, *:before, *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 section {
-    height: 100vh;
-    display: flex;
-    position: relative;
-    &:after {
-        content: attr(name);
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding-right: 1em;
-        padding-top: 1em;
-        font-family: sans-serif;
-        text-transform: uppercase;
-        font-size: 0.7em;
-        font-weight: 700;
-    }
+  height: 100vh;
+  position: relative;
+  &:after {
+    content: attr(name);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 1em;
+    padding-top: 1em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 700;
+  }
 }
 
 #one-tone-text-shadow {
-    background: #DAA70B;
-    h1 {
-        @include text-close-shade(6, #8E432B);
-        font-size: 12em;
-        text-align: center;
-        color: #B43219;
-        font-family: "museo-sans";
-        margin: auto;
-        font-weight: 300;
-    }
+  h1 {
+    @include text-close-shade(10, (#ff00ff, #ffd800), true);
+  }
+}
+
+.cleared-underline {
+  @include underline(#f3a801, 2, 3);
 }

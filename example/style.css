@@ -1,11 +1,5 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
 section {
   height: 100vh;
-  display: flex;
   position: relative; }
   section:after {
     content: attr(name);
@@ -19,15 +13,11 @@ section {
     font-size: 0.7em;
     font-weight: 700; }
 
-#one-tone-text-shadow {
-  background: #DAA70B; }
-  #one-tone-text-shadow h1 {
-    text-shadow: 0px 1px #8E432B, -1px 0px #8E432B, -0px 1px #8E432B, -1px 0px #8E432B, -1px 2px #8E432B, -2px 1px #8E432B, -2px 3px #8E432B, -3px 2px #8E432B, -3px 4px #8E432B, -4px 3px #8E432B, -4px 5px #8E432B, -5px 4px #8E432B, -5px 6px #8E432B, -6px 5px #8E432B;
-    font-size: 12em;
-    text-align: center;
-    color: #B43219;
-    font-family: "museo-sans";
-    margin: auto;
-    font-weight: 300; }
+#one-tone-text-shadow h1 {
+  text-shadow: 0px 1px #ff00ff, 1px 0px #ffd800, 0px 1px #ff00ff, 1px 0px #ffd800, 1px 2px #ff00ff, 2px 1px #ffd800, 2px 3px #ff00ff, 3px 2px #ffd800, 3px 4px #ff00ff, 4px 3px #ffd800, 4px 5px #ff00ff, 5px 4px #ffd800, 5px 6px #ff00ff, 6px 5px #ffd800, 6px 7px #ff00ff, 7px 6px #ffd800, 7px 8px #ff00ff, 8px 7px #ffd800, 8px 9px #ff00ff, 9px 8px #ffd800, 9px 10px #ff00ff, 10px 9px #ffd800; }
+
+.cleared-underline {
+  background-image: linear-gradient(0deg, transparent, transparent 2px, #f3a801 0, #f3a801 5px, transparent 0);
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff; }
 
 /*# sourceMappingURL=style.css.map */
