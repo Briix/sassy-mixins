@@ -8,3 +8,8 @@
     }
     text-shadow: $shadow;
 }
+
+@mixin underline($color, $baseline, $thickness: 1, $background: #fff) {
+    background-image: linear-gradient(0deg, transparent, transparent #{$baseline}px, $color 0, $color #{$baseline+$thickness}px, transparent 0);
+    text-shadow: .03em 0 $background, -.03em 0 $background, 0 .03em $background, 0 -.03em $background, .06em 0 $background, -.06em 0 $background, .09em 0 $background, -.09em 0 $background, .12em 0 $background, -.12em 0 $background;
+}

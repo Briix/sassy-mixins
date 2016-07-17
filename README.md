@@ -15,6 +15,17 @@ For examples of the different mixins, check the `example` folder.
 | color          | `string`, `list`    | Yes       |
 | printer-shade  | `boolean`           | No        |
 
+### underline( `color`, `baseline`, `thickness`, `background` )
+
+`underline` creates a "smart" underline on your text, that will clear descenders using a mix of a linear gradient background and a text shadow. This can only be used on solid colored backgrounds and can be very resource intensive on longer paragraphs of text.
+
+| Parameters     | Accepted Data Types | Required? |
+|----------------|---------------------|-----------|
+| color          | `string`            | Yes       |
+| baseline       | `int`               | Yes       |
+| thickness      | `int`               | No        |
+| background     | `string`            | No        |
+
 ## Instructions
 
     // Import the mixin file
